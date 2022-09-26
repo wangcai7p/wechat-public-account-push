@@ -29,11 +29,11 @@ const USER_CONFIG = {
 
     /** 每日N句 */
     // 金山每日一句
-    CIBA: true,
+    CIBA: false,
     // 每日一言
     oneTalk: false,
     // 土味情话(彩虹屁)
-    earthyLoveWords: false,
+    earthyLoveWords: true,
     // 朋友圈文案
     momentCopyrighting: false,
     // 毒鸡汤
@@ -42,7 +42,7 @@ const USER_CONFIG = {
     poetry: false,
 
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -55,7 +55,7 @@ const USER_CONFIG = {
 
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: '',
+  LITERARY_PREFERENCE: '原创',
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
@@ -69,11 +69,11 @@ const USER_CONFIG = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: 'aOC0P4H28P0o0uQUUGEcuNwuMGS4VSGJT_giwwZ5MGA',
       // 所在省份
-      province: '广东',
+      province: '江西',
       // 所在城市
-      city: '肇庆',
+      city: '南京',
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '03-10',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -82,27 +82,27 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
+          type: '*生日', name: '小可爱', year: '2002', date: '01-27',
         },
         {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+          type: '生日', name: '大帅锅', year: '2020', date: '02-24',
         }
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+//         {
+//           type: '生日', name: '李四', year: '1996', date: '09-31',
+//         },
+//         {
+//           type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+//         }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
+        { keyword: 'love_day', date: '2022-06-25' }
         // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-        // 退伍日
-        { keyword: 'ex_day', date: '2022-09-10' }
+//         { keyword: 'marry_day', date: '2022-09-09' },
+//         // 退伍日
+//         { keyword: 'ex_day', date: '2022-09-10' }
       ],
       // 课程表相关配置
       // 如果courseSchedule不存在或者为空（null）则认为没有课程
@@ -239,9 +239,9 @@ const USER_CONFIG = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: '广东',
+  PROVINCE: '江西',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '惠州',
+  CITY: '景德镇',
 
   /** 重要节日相关 */
 
@@ -265,18 +265,18 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '老婆', year: '1996', date: '09-09', isShowAge: true,
+      type: '*生日', name: '小可爱', year: '2002', date: '01-27', isShowAge: true,
     },
     {
-      type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
-    },
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {
-      type: '生日', name: '李四', year: '1996', date: '09-31', isShowAge: true,
-    },
-    {
-      type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+      type: '生日', name: '大帅锅', year: '2002', date: '02-24',
     }
+    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+//     {
+//       type: '生日', name: '李四', year: '1996', date: '09-31', isShowAge: true,
+//     },
+//     {
+//       type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+//     }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -296,11 +296,11 @@ const USER_CONFIG = {
    * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    { keyword: 'love_day', date: '2022-09-08' },
+    { keyword: 'love_day', date: '2022-06-25' }
     // 结婚纪念日
-    { keyword: 'marry_day', date: '2022-09-09' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
+//     { keyword: 'marry_day', date: '2022-09-09' },
+//     // 退伍日
+//     { keyword: 'ex_day', date: '2022-09-10' }
     // 你可以不断按格式往下增加
     // ...
   ],
