@@ -29,11 +29,11 @@ const USER_CONFIG = {
 
     /** 每日N句 */
     // 金山每日一句
-    CIBA: true,
+    CIBA: false,
     // 每日一言
     oneTalk: false,
     // 土味情话(彩虹屁)
-    earthyLoveWords: false,
+    earthyLoveWords: true,
     // 朋友圈文案
     momentCopyrighting: false,
     // 毒鸡汤
@@ -67,7 +67,7 @@ const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'osX6d6XfSf-qfhJIrak382badeI8',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: 'lzxFlUtmf5mj8M19OQ53jw5aVLzKLNsJYAt4C_v7GNA',
+      useTemplateId: 'ymFp3Vc2hQFbUPyTL1usbDryiyCXXVfrvg0SelJaYZs',
       // 所在省份
       province: '江西',
       // 所在城市
